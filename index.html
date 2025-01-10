@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FaisPasGenre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+
+    @font-face {
+        font-family: Futur;
+        src: format(ttf) url("./src/Fonts/futur.ttf");
+    }
+
+      /*
+      Les règles de style suivantes s'appliquent à l'ensemble de la page.
+      Elles garantissent que le contenu de la page s'adapte à la taille de l'écran.
+      */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./src/Images/FondV1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      /*
+      La règle de style suivante s'applique au titre.
+      Elle garantit que le titre prend toute la largeur de la page et qu'il est centré.
+      */
+      h1 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: -20px;
+      }
+      
+      /*
+      La règle de style suivante s'applique au bouton.
+      Elle garantit que le bouton prend toute la largeur disponible et qu'il est centré.
+      */
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.5rem;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #283071;
+        font-weight: 800;
+      }
+
+      @media (max-width: 1000px) {
+        h1 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.7rem;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: "Space Mono", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #283071;
+        font-weight: 800;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./src/Images/Logo.png" alt="" style="width: 50%; height: fit-content;">
+    <!-- Le titre de la page -->
+    <h1>Bienvenue sur la page du podcast !</h1>
+    <h2>Un projet proposé par Rémy Thouvenin</h2>
+    <!-- Le bouton de la page -->
+    <button onclick="openPDF()">Visualiser les contenus</button>
+
+    <script>
+        function openPDF() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("https://www.playbook.com/s/ervoann/ivw4MhmNHgCoWn672w794Z6J", "_blank");
+        }
+      </script>
+  </body>
+</html>
